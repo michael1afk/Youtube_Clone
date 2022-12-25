@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Youtube.com Clone</title>
+
+        <!-- My style sheets-->
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
+
+        <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <!-- LEFT SECTION -->
+            <div class="left-section"><!--Nav button and youtube logo-->
+                <img class="hamburger-menu" src ="/Images/icons/hamburger-menu.svg" alt="">
+                <img class="youtube-logo" src ="/Images/icons/youtube-logo.svg" alt="">
+            </div>
+            
+            <!-- MID SECTION -->
+            <div class="middle-section"><!--Search Bar, Search Button and Voice Search Button-->
+                <input class="search-bar" type="text" placeholder="Search"> 
+                <button class="search-button">
+                    <img class="search-icon" src="/Images/icons/search.svg" alt="">
+                    <div class="tooltip">Search</div>
+                </button>
+                <!-- Put position: absoulute inside position: relative-->
+                <button class="voice-search-button">
+                    <img class="voice-search-icon" src ="/Images/icons/voice-search-icon.svg" alt="">
+                    <div class="tooltip">Search with your voice</div>
+                </button>
+            </div>
+
+            <!-- RIGHT SECTION-->
+            <div class="right-section"><!--Create, more apps, notification and user profile-->
+                <div class="upload-icon-container">
+                    <img class="upload-icon" src ="/Images/icons/upload.svg" alt="">
+                    <div class="tooltip">Create</div>
+                </div>
+                <div class="youtube-apps-icon-container"> 
+                    <img class="youtube-apps-icon" src ="/Images/icons/youtube-apps.svg" alt="">
+                    <div class="tooltip">Youtube apps</div>
+                </div>                
+                <div class="notifications-icon-container">
+                    <img class="notifications-icon" src ="/Images/icons/notifications.svg" alt="">    
+                    <div class="notifications-count">3</div>
+                    <div class="tooltip">Notifications</div>
+                </div>
+                <img class="current-user-picture" src="/Images/channel-pictures/my-channel.jpeg" alt="">
+            </div>
+        </header>
+        
+            <!-- SIDEBAR -->
+        <nav class="sidebar">
+            <div class="sidebar-link">
+                <img src ="/Images/icons/home.svg" alt="">
+                <div>Home</div>
+            </div>
+            <div class="sidebar-link">
+                <img src ="/Images/icons/explore.svg" alt="">
+                <div>Explore</div>
+            </div>
+            <div class="sidebar-link">
+                <img src ="/Images/icons/subscriptions.svg" alt="">
+                <div>Subscriptions</div>
+            </div>
+            <div class="sidebar-link">
+                <img src ="/Images/icons/originals.svg" alt="">
+                <div>Originals</div>
+            </div>
+            <div class="sidebar-link">
+                <img src ="/Images/icons/youtube-music.svg" alt="">
+                <div>Youtube Music</div>
+            </div>
+            <div class="sidebar-link">
+                <img src ="/Images/icons/library.svg" alt="">
+                <div>Library</div>
+            </div>
+        </nav>
+        
+        <main>
+            <section class="video-grid">
+
+                <!--First Video-->
+                <div class="video-preview">
+                    <div class="thumbnanil-row">
+                        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" class="video-title-link" target="_blank">
+                            <img class="thumbnail" src="/Images/thumbnails/thumbnail-1.webp">
+                            <div class="video-time">
+                                14:20
+                            </div> 
+                        </a>                                               
+                    </div>
+                    <div class="video-info-grid">
+                            <div class="channel-picture">
+                                <div class="profile-picture-container">
+                                    <a href="https://www.youtube.com/c/mkbhd" target="_blank">
+                                        <img class="profile-picture" src="/Images/channel-pictures/channel-1.jpeg" alt="">
+                                    </a>
+                                    <div class="channel-tooltip">
+                                        <div>
+                                            <img class="channel-tooltip-picture" src="/Images/channel-pictures/channel-1.jpeg" alt="">
+                                        </div>
+                                        <div>
+                                            <div class="channel-tooltip-name">Marques Brownlee</div> 
+                                            <div class="channel-tooltip-stats">15M subscribers</div>    
+                                        </div>
+                                    </div>
+                                </div>                             
+                            </div>
+                        
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" class="video-title-link" target="_blank">
+                                <p class="video-title">
+                                    Talking Tech and AI with Google CEO Sundar Pichai!
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                Marques Brownlee
+                            </p>
+                            <p class="video-stats">
+                                3.4M views &middot; 6 months ago
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Video-->
+                <div class="video-preview">
+                    <div class="thumbnanil-row">
+                        <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" class="video-title-link" target="_blank">
+                            <img class="thumbnail" src="/Images/thumbnails/thumbnail-2.webp">
+                            <div class="video-time">
+                                8:22
+                            </div>   
+                        </a>   
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="http://youtube.com/c/markiplier" target="_blank">
+                                    <img class="profile-picture" src="/Images/channel-pictures/channel-2.jpeg" alt="">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <div>
+                                        <img class="channel-tooltip-picture" src="/Images/channel-pictures/channel-2.jpeg" alt="">
+                                    </div>
+                                    <div>
+                                        <div class="channel-tooltip-name">Markiplier</div> 
+                                        <div class="channel-tooltip-stats">33M subscribers</div>    
+                                    </div>
+                                </div>
+                            </div> 
+                            
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" class="video-title-link" target="_blank"> 
+                                <p class="video-title">
+                                    Try Not to Laugh Challenge #9 
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                Markiplier
+                            </p>
+                            <p class="video-stats">
+                                19M views &middot; 4 years ago
+                            </p> 
+                        </div>
+                    </div>
+                </div>    
+
+                <!--Third Video-->    
+                <div class="video-preview">
+                    <div class="thumbnanil-row">
+                        <a href="https://www.youtube.com/watch?v=mUPgrydd6To&t=19s" class="video-title-link" target="_blank">
+                            <img class="thumbnail" src="/Images/thumbnails/thumbnail-3.webp">
+                            <div class="video-time">
+                                9:13
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture"> 
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/c/HoodGamingUK/featured" target="_blank">
+                                    <img class="profile-picture" src="/Images/channel-pictures/channel-3.jpeg" alt="">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <div>
+                                        <img class="channel-tooltip-picture" src="/Images/channel-pictures/channel-3.jpeg" alt="">
+                                    </div>
+                                    <div>
+                                        <div class="channel-tooltip-name">Hood Gaming</div> 
+                                        <div class="channel-tooltip-stats">14.6k subscribers</div>    
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=mUPgrydd6To&t=19s" class="video-title-link" target="_blank">
+                                <p class="video-title">
+                                    FM22 MANCHESTER UNITED REBUILD
+                                </p>
+                            </a>
+                            
+                            <p class="video-author">
+                                Hood Gaming
+                            </p>
+
+                            <p class="video-stats">
+                                30.5M views &middot 1 hour ago
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fourth Video-->            
+                <div class="video-preview">
+                    <div class="thumbnanil-row">
+                        <a href="https://www.youtube.com/watch?v=094y1Z2wpJg" class="video-title-link" target="_blank">
+                            <img class="thumbnail" src="/Images/thumbnails/thumbnail-4.webp">
+                            <div class="video-time">
+                                22:09
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture"> 
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/c/veritasium" target="_blank">
+                                    <img class="profile-picture" src="/Images/channel-pictures/channel-4.jpeg" alt="">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <div>
+                                        <img class="channel-tooltip-picture" src="/Images/channel-pictures/channel-4.jpeg" alt="">
+                                    </div>
+                                    <div>
+                                        <div class="channel-tooltip-name">Veritasium</div> 
+                                        <div class="channel-tooltip-stats">12.1M subscribers</div>    
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=094y1Z2wpJg" class="video-title-link" target="_blank">
+                                <p class="video-title">
+                                    The Simplest Math Problem No One Can Solve - Collatz
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                Veritasium
+                            </p>
+                            <p class="video-stats">
+                                18M views &middot; 4 months ago
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fifth Video-->
+                <div class="video-preview">
+                    <div class="thumbnanil-row">
+                        <a href="https://www.youtube.com/watch?v=86CQq3pKSUw" class="video-title-link" target="_blank">
+                            <img class="thumbnail" src="/Images/thumbnails/thumbnail-5.webp">
+                            <div class="video-time">
+                                11:17
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture"> 
+                            <div class="profile-picture-container">
+                                <a href="https://youtube.com/c/CSDojo" target="_blank">
+                                    <img class="profile-picture" src="/Images/channel-pictures/channel-5.jpeg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <div>
+                                        <img class="channel-tooltip-picture" src="/Images/channel-pictures/channel-5.jpeg" alt="">
+                                    </div>
+                                    <div>
+                                        <div class="channel-tooltip-name">CS Dojo</div> 
+                                        <div class="channel-tooltip-stats">1.79M subscribers</div>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=86CQq3pKSUw" class="video-title-link" target="_blank">
+                                <p class="video-title">
+                                    Kadane's Algorithm to Maximum Sum Subarray Problem
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                CS Dojo
+                            </p>
+                            <p class="video-stats">
+                                519K views &middot; 5 years ago
+                            </p> 
+                        </div>
+                    </div>
+                </div>    
+
+                <!-- Sixth Video-->    
+                <div class="video-preview">
+                    <div class="thumbnanil-row">
+                        <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg" class="video-title-link" target="_blank">
+                            <img class="thumbnail" src="/Images/thumbnails/thumbnail-6.webp">
+                            <div class="video-time">
+                                19:59
+                            </div>                        
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture"> 
+                            <div class="profile-picture-container">
+                                <a href="https://youtube.com/c/MrBeast6000" target="_blank">
+                                    <img class="profile-picture" src="/Images/channel-pictures/channel-6.jpeg" alt="">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <div>
+                                        <img class="channel-tooltip-picture" src="/Images/channel-pictures/channel-6.jpeg" alt="">
+                                    </div>
+                                    <div>
+                                        <div class="channel-tooltip-name">MrBeast</div> 
+                                        <div class="channel-tooltip-stats">90.6M subscribers</div>    
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg" class="video-title-link" target="_blank">
+                                <p class="video-title">
+                                    Anything You Can Fit In The Circle I&apos;ll Pay For
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                MrBeast
+                            </p>
+                            <p class="video-stats">
+                                141M views &middot; 1 year ago
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Seventh Video-->
+                <div class="video-preview">
+                    <div class="thumbnanil-row">
+                        <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y" class="video-title-link" target="_blank">
+                            <img class="thumbnail" src="/Images/thumbnails/thumbnail-7.webp" alt="img">
+                            <div class="video-time">
+                                10:13
+                            </div>
+                        </a>  
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture"> 
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/c/RealLifeLore" target="_blank">
+                                    <img class="profile-picture" src="/Images/channel-pictures/channel-7.jpeg" alt="">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <div>
+                                        <img class="channel-tooltip-picture" src="/Images/channel-pictures/channel-7.jpeg" alt="">
+                                    </div>
+                                    <div>
+                                        <div class="channel-tooltip-name">RealLifeLore</div> 
+                                        <div class="channel-tooltip-stats">5.92M subscribers</div>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y" class="video-title-link" target="_blank">
+                                <p class="video-title">
+                                    Why Planes Don't Fly Over Tibet
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                RealLifeLore
+                            </p>
+                            <p class="video-stats">
+                                6.6M views &middot; 1 years ago
+                            </p> 
+                        </div>
+                    </div>
+                </div>    
+
+                <!--Eighth Video-->
+                <div class="video-preview">
+                    <div class="thumbnanil-row">
+                        <a href="https://www.youtube.com/watch?v=lFm4EM1juls" class="video-title-link" target="_blank">
+                            <img class="thumbnail" src="/Images/thumbnails/thumbnail-8.webp" alt="img"> <!--this is the thumbnail-->
+                            <div class="video-time">
+                                7:12
+                            </div>
+                        </a>                                               
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture"> 
+                            <div class="profile-picture-container"><!--This is the "Position: relative" element-->
+                                <a href="https://www.youtube.com/channel/UCHAK6CyegY22Zj2GWrcaIxg" target="_blank">
+                                    <img class="profile-picture" src="/Images/channel-pictures/channel-8.jpeg" alt="">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <div>
+                                        <img class="channel-tooltip-picture" src="/Images/channel-pictures/channel-8.jpeg" alt="">
+                                    </div>
+                                    <div>
+                                        <div class="channel-tooltip-name">Tech Vision</div> 
+                                        <div class="channel-tooltip-stats">755K subscribers</div>    
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=lFm4EM1juls" class="video-title-link" target="_blank">
+                                <p class="video-title">
+                                    Inside The World's Biggest Passenger Plane
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                Tech Vision
+                            </p>
+                            <p class="video-stats">
+                                3.74M views &middot; 10 months ago
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+
+                <!--Ninth Video-->
+                <div class="video-preview">
+                    <div class="thumbnanil-row">
+                        <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc" class="video-title-link" target="_blank">
+                            <img class="thumbnail" src="/Images/thumbnails/thumbnail-9.webp" alt="img">        
+                            <div class="video-time">
+                                13:17
+                            </div>
+                        </a>                    
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture"> 
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/c/OFFICIALTHENXSTUDIOS" target="_blank">
+                                    <img class="profile-picture" src="/Images/channel-pictures/channel-9.jpeg" alt="">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <div>
+                                        <img class="channel-tooltip-picture" src="/Images/channel-pictures/channel-9.jpeg" alt="">
+                                    </div>
+                                    <div>
+                                        <div class="channel-tooltip-name">THENX</div> 
+                                        <div class="channel-tooltip-stats">7.37M subscribers</div>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc" class="video-title-link" target="_blank">
+                                <p class="video-title">
+                                    The SECRET to Super Human STRENGTH
+                                </p>
+                            </a>                        
+                            <p class="video-author">
+                                ThenX
+                            </p>
+                            <p class="video-stats">
+                                20M views &middot; 3 years ago
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tenth Video-->
+                <div class="video-preview">
+                    <div class="thumbnanil-row">
+                        <a href="https://www.youtube.com/watch?v=MnUfXYGtT5Q" class="video-title-link" target="_blank">
+                            <img class="thumbnail" src="/Images/thumbnails/thumbnail-10.webp" alt="img">        
+                            <div class="video-time">
+                                1:43:32
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/c/JordanPetersonVideos" target="_blank">
+                                    <img class="profile-picture" src="/Images/channel-pictures/channel-10.jpeg" alt="">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <div>
+                                        <img class="channel-tooltip-picture" src="/Images/channel-pictures/channel-10.jpeg" alt="">
+                                    </div>
+                                    <div>
+                                        <div class="channel-tooltip-name">Jordan B Peterson</div> 
+                                        <div class="channel-tooltip-stats">5.12M subscribers</div>    
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=MnUfXYGtT5Q" class="video-title-link" target="_blank">
+                                <p class="video-title">
+                                    Who Dares Say He believes in God?
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                Jordan B Peterson
+                            </p>
+                            <p class="video-stats">
+                                3.7M views &middot; 3 years ago
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+
+                <!--Eleventh Video-->
+                <div class="video-preview">
+                    <div class="thumbnanil-row">
+                        <a href="https://www.youtube.com/watch?v=DApmNmySUn8" class="video-title-link" target="_blank">
+                            <img class="thumbnail" src="/Images/thumbnails/thumbnail-11.webp" alt="img">        
+                            <div class="video-time">
+                                4:10
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/c/Destinationtips" target="_blank">
+                                    <img class="profile-picture" src="/Images/channel-pictures/channel-11.jpeg" alt="">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <div>
+                                        <img class="channel-tooltip-picture" src="/Images/channel-pictures/channel-11.jpeg" alt="">
+                                    </div>
+                                    <div>
+                                        <div class="channel-tooltip-name">Destination Tips</div> 
+                                        <div class="channel-tooltip-stats">271K subscribers</div>    
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=DApmNmySUn8" class="video-title-link" target="_blank">
+                                <p class="video-title">
+                                    Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                Destination Tips
+                            </p>
+                            <p class="video-stats">
+                                3.7M views &middot; 3 years ago
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+
+                <!--Twelfth Video-->
+                <div class="video-preview">
+                    <div class="thumbnanil-row">
+                        <a href="https://www.youtube.com/watch?v=q3BFNRvsk5c" class="video-title-link" target="_blank">
+                            <img class="thumbnail" src="/Images/thumbnails/thumbnail-12.webp" alt="img">        
+                            <div class="video-time">
+                                4:10
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/c/TifoIRL" target="_blank">
+                                    <img class="profile-picture" src="/Images/channel-pictures/channel-12.jpeg" alt="">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <div>
+                                        <img class="channel-tooltip-picture" src="/Images/channel-pictures/channel-12.jpeg" alt="">
+                                    </div>
+                                    <div>
+                                        <div class="channel-tooltip-name">Tifo IRL</div> 
+                                        <div class="channel-tooltip-stats">197K subscribers</div>    
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=q3BFNRvsk5c" class="video-title-link" target="_blank">
+                                <p class="video-title">
+                                    What has Ragnick Actually Done at Manchester United?
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                Tifo IRL
+                            </p>
+                            <p class="video-stats">
+                                174k views &middot; 1 month ago
+                            </p> 
+                        </div>
+                    </div>
+                </div>                
+
+            </section> <!--Video Grid ends here-->
+        </main>
+            
+        
+
+       
+    </body>
+</html>
